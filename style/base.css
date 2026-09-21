@@ -78,14 +78,13 @@ h3 {
     line-height: var(--lh-heading-3);
 }
 
-/* глобальный сброс ссылок */
+
 a {
     text-decoration: none;
     color: inherit;
     transition: color 0.2s ease, background-color 0.2s ease;
 }
 
-/* глобальный сброс кнопок */
 button {
     font-family: inherit;
     font-size: inherit;
@@ -111,4 +110,14 @@ img {
     max-width: var(--container-width);
     margin: 0 auto;
     padding: 0 var(--container-padding);
+}
+
+.promo-slider,
+.about,
+.mobile-app {
+    margin-top: 100px;
+}
+
+footer {
+    margin-top: 100px;
 }
