@@ -1,3 +1,22 @@
+@media (max-width: 768px) {
+    .about-images {
+        flex-direction: column;
+    }
+
+    .about-column {
+        width: 100%;
+    }
+
+    .about-column img {
+        height: 590px;
+    }
+
+    .about-column:nth-child(1) img:nth-child(2),
+    .about-column:nth-child(2) img:nth-child(1) {
+        display: none;
+    }
+}
+
 .about-container {
     max-width: 1360px;
     margin: 0 auto;
