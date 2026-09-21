@@ -1,0 +1,33 @@
+.about-container {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-container h2 {
+    text-align: left;
+}
+
+.about-images {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+}
+
+.about-column {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    list-style: none;
+    width: 100%;
+}
+
+.about-column img {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}

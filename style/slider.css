@@ -1,0 +1,103 @@
+.promo-slider-container {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.promo-slider-container h2 {
+    text-align: center;
+}
+
+.slider-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+}
+
+.left-arrow,
+.right-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    border: 1px solid var(--color-border-inverse);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.left-arrow:hover,
+.right-arrow:hover {
+    background-color: var(--color-border-inverse);
+}
+
+.slider-list {
+    list-style: none;
+    display: flex;
+}
+
+.slider-list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 480px;
+    text-align: center;
+}
+
+/* only first card*/
+.slider-list-item:not(:first-child) {
+    display: none;
+}
+
+.slider-list-item img {
+    width: 480px;
+    height: 480px;
+    object-fit: cover;
+}
+
+.slider-list-item h3 {
+    font-size: 24px;
+    line-height: 1.25;
+    font-weight: 600;
+}
+
+.slider-list-item p {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.product-price {
+    display: block;
+    font-size: 24px;
+    line-height: 1.25;
+    font-weight: 600;
+}
+
+.slider-controls {
+    display: flex;
+    gap: 12px;
+    list-style: none;
+}
+
+.slider-control {
+    width: 40px;
+    height: 4px;
+    border-radius: 100px;
+    border: none;
+    background-color: var(--color-border-primary);
+    cursor: pointer;
+}
+
+.slider-control[aria-current="true"] {
+    background-color: var(--color-border-inverse);
+}
