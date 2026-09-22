@@ -1,0 +1,56 @@
+@media (max-width: 768px) {
+    .hero-container {
+        padding: 100px 60px;
+    }
+}
+
+.hero {
+    padding: 0 40px;
+}
+
+.hero-container {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 100px;
+    border-radius: 40px;
+    background-image: url('../images/img-hero.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-offer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 530px;
+}
+
+.hero-offer h1 {
+    color: var(--color-text-inverse);
+}
+
+.hero-offer h1 .text-italic {
+    color: var(--color-accent);
+    font-style: italic;
+}
+
+.hero-offer p {
+    color: var(--color-text-inverse);
+    font-weight: 400;
+}
+
+.btn-menu {
+    display: inline-block;
+    width: 200px;
+    padding: 20px 0;
+    border-radius: 100px;
+    background-color: var(--color-text-inverse);
+    color: var(--color-text-primary);
+    font-weight: 600;
+    text-align: center;
+}
+
+.btn-menu:hover {
+    background-color: var(--color-accent);
+    color: var(--color-text-inverse);
+}

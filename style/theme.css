@@ -1,0 +1,12 @@
+:root[data-theme="dark"] {
+    --color-text-primary: #E1D4C9;
+    --color-text-inverse: #E1D4C9;
+    --color-accent: #B0907A;
+
+    --color-bg-page: #292826;
+    --color-bg-container: #403F3D;
+    --color-bg-overlay: rgba(41, 40, 38, 0.8);
+
+    --color-border-primary: #665F55;
+    --color-border-inverse: #C1B6AD;
+}

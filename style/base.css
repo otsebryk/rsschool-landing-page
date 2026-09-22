@@ -1,0 +1,123 @@
+@import url('reset.css');
+
+:root {
+    /* Colors — light theme (default) */
+    --color-text-primary: #403F3D;
+    --color-text-inverse: #E1D4C9;
+    --color-accent: #B0907A;
+
+    --color-bg-page: #E1D4C9;
+    --color-bg-container: #665F55;
+    --color-bg-overlay: rgba(64, 63, 61, 0.8);
+
+    --color-border-primary: #C1B6AD;
+    --color-border-inverse: #665F55;
+
+    /* Typography */
+    --font-family-main: 'Inter', sans-serif;
+
+    --fs-heading-1: 72px;
+    --lh-heading-1: 1.05;
+
+    --fs-heading-2: 60px;
+    --lh-heading-2: 1.25;
+
+    --fs-heading-3: 24px;
+    --lh-heading-3: 1.25;
+
+    --fs-body-medium: 16px;
+    --lh-body-medium: 1.5;
+
+    --fs-caption: 10px;
+    --lh-caption: 1.4;
+
+    --fs-button: 16px;
+    --lh-button: 1.5;
+
+    --fs-burger-link: 32px;
+    --lh-burger-link: 1.25;
+
+    /* Layout */
+    --container-width: 1440px;
+    --container-padding: 40px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family-main);
+    font-size: var(--fs-body-medium);
+    line-height: var(--lh-body-medium);
+    font-weight: 400;
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-page);
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: var(--fs-heading-1);
+    line-height: var(--lh-heading-1);
+}
+
+h2 {
+    font-size: var(--fs-heading-2);
+    line-height: var(--lh-heading-2);
+}
+
+h3 {
+    font-size: var(--fs-heading-3);
+    line-height: var(--lh-heading-3);
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+button {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.text-italic {
+    font-style: italic;
+    color: var(--color-accent);
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+.promo-slider,
+.about,
+.mobile-app {
+    margin-top: 100px;
+}
+
+footer {
+    margin-top: 100px;
+}
