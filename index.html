@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee House</title>
+    <script>
+        if (localStorage.getItem('theme') === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+    </script>
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.css">
 </head>
@@ -27,7 +32,7 @@
 
             <div class="header-actions">
                 <label class="theme-switch">
-                    <input type="checkbox" class="theme-switch-input" aria-label="Switch to dark mode">
+                    <input type="checkbox" class="theme-switch-input" aria-label="Dark theme">
                     <span class="theme-switch-track">
                         <img src="images/son.svg" alt="" width="36" height="36">
                         <img src="images/moon.svg" alt="" width="36" height="36">
@@ -62,52 +67,52 @@
             <div class="promo-slider-container">
                 <h2>Choose your <span class="text-italic">favorite</span> coffee</h2>
                 <div class="slider-wrapper">
-                    <button class="left-arrow" aria-label="Swipe left">
-                        <img src="images/arrow-left.svg" alt="Left arrow" width="24" height="24">
+                    <button class="left-arrow" aria-label="Previous slide">
+                        <img src="images/arrow-left.svg" alt="" width="24" height="24">
                     </button>
                     <ul class="slider-list">
                         <li class="slider-list-item">
-                            <img src="images/content/coffee-slider-1.png" alt="Frappuccino" width="480" height="480">
+                            <img src="images/content/coffee-slider-1.png" alt="S'mores Frappuccino in a tall glass"
+                                width="480" height="480">
                             <h3>S’mores Frappuccino</h3>
                             <p>This new drink takes an espresso and mixes it with brown sugar and cinnamon before
                                 being topped with oat milk.</p>
                             <p><span class="product-price">$5.50</span></p>
                         </li>
                         <li class="slider-list-item">
-                            <img src="images/content/coffee-slider-2.png" alt="Caramel Macchiato" width="480"
-                                height="480">
+                            <img src="images/content/coffee-slider-2.png" alt="Caramel Macchiato with whipped cream"
+                                width="480" height="480">
                             <h3>Caramel Macchiato</h3>
                             <p>Fragrant and unique classic espresso with rich caramel-peanut syrup, with cream under
                                 whipped thick foam.</p>
                             <p><span class="product-price">$5.00</span></p>
                         </li>
                         <li class="slider-list-item">
-                            <img src="images/content/coffee-slider-3.png" alt="Ice coffee" width="480" height="480">
+                            <img src="images/content/coffee-slider-3.png" alt="Iced coffee in a glass" width="480"
+                                height="480">
                             <h3>Ice coffee</h3>
                             <p>A popular summer drink that tones and invigorates. Prepared from coffee, milk and ice.
                             </p>
                             <p><span class="product-price">$4.50</span></p>
                         </li>
                     </ul>
-                    <button class="right-arrow" aria-label="Swipe right">
-                        <img src="images/arrow-right.svg" alt="Right arrow" width="24" height="24">
-
+                    <button class="right-arrow" aria-label="Next slide">
+                        <img src="images/arrow-right.svg" alt="" width="24" height="24">
                     </button>
                 </div>
                 <ul class="slider-controls">
                     <li>
-                        <button class="slider-control" aria-label="Choose coffee 1" aria-current="true"></button>
+                        <button class="slider-control" aria-label="Show slide 1" aria-current="true"></button>
                     </li>
                     <li>
-                        <button class="slider-control" aria-label="Choose coffee 2"></button>
+                        <button class="slider-control" aria-label="Show slide 2"></button>
                     </li>
                     <li>
-                        <button class="slider-control" aria-label="Choose coffee 3"></button>
+                        <button class="slider-control" aria-label="Show slide 3"></button>
                     </li>
                 </ul>
             </div>
         </section>
-
         <section class="about" id="about">
             <div class="about-container">
                 <h2>Resource is <span class="text-italic">the perfect and cozy place</span> where you can enjoy a
@@ -211,6 +216,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="script/script.js"></script>
 </body>
 
 </html>
